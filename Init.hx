@@ -7,7 +7,7 @@ class Init {
 	static public function init() {
 		trace("initalize coolutil");
 		trace(version);
-		var data = Http.requestUrl("https://raw.githubusercontent.com/ItsLJcool/LJ-FNF-CoolUtil-addon/version.json");
+		var data = Http.requestUrl("https://raw.githubusercontent.com/ItsLJcool/LJ-FNF-CoolUtil-addon/main/version.json");
 		trace(data);
 	}
 }
