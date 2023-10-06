@@ -4,6 +4,7 @@ import haxe.Http;
 import sys.thread.Thread;
 import flixel.FlxG;
 import Sys;
+import lime.app.Application;
 class Init {
 	static public var version:String = "1.0.0";
 	static public var custom:Bool = false;
@@ -28,7 +29,7 @@ class Init {
 		if (version != jsonVersion.version) {
 			trace("outdated version!! updating");
 			if (githubSource == null) {
-				FlxG.stage.application.current.window.alert("HEY! you need to go into `ljcoolutil` and set your `githubSource` string into your GitHub Source!", "YO Dumbasses");
+				Application.current.window.alert("HEY! you need to go into `ljcoolutil` and set your `githubSource` string into your GitHub Source!", "YO Dumbasses");
 				Sys.exit(0);
 				return;
 			}
