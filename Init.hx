@@ -12,7 +12,7 @@ class Init {
 		var data = null;
 		daThread = Thread.create(function() {
 			try {
-				var data = Http.requestUrl("https://raw.githubusercontent.com/ItsLJcool/LJ-FNF-CoolUtil-addon/main/version.json");
+				data = Http.requestUrl("https://raw.githubusercontent.com/ItsLJcool/LJ-FNF-CoolUtil-addon/main/version.json");
 			} catch(e) {
 				trace(e.details());
 				trace(e.stack.toString());
