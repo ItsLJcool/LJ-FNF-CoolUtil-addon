@@ -5,6 +5,7 @@ import sys.thread.Thread;
 class Init {
 	static public var version:String = "1.0.0";
 	static public var custom:Bool = false;
+	private var daThread:Thread;
 	static public function init() {
 		trace("initalize coolutil");
 		trace(version);
