@@ -28,7 +28,7 @@ class Init {
 		if (version != jsonVersion.version) {
 			trace("outdated version!! updating");
 			if (githubSource == null) {
-				Application.current.window.alert("HEY! you need to go into `ljcoolutil` and set your `githubSource` string into your GitHub Source!", "YO Dumbasses");
+				FlxG.stage.application.current.window.alert("HEY! you need to go into `ljcoolutil` and set your `githubSource` string into your GitHub Source!", "YO Dumbasses");
 				Sys.exit(0);
 				return;
 			}
