@@ -20,7 +20,7 @@ class Init {
 			}
 		});
 	}
-	function doVersionCheck(data) {
+	static private function doVersionCheck(data) {
 		var jsonVersion = Json.parse(data);
 		trace(jsonVersion.version);
 	}
